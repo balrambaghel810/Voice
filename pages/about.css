@@ -1,0 +1,99 @@
+.btn {
+  background-color: #ff4400;
+}
+
+.btn:hover {
+  background-color: #ff4400d6;
+}
+
+/*** Team Start ***/
+
+/* General Styles */
+
+h1 {
+  font-family: Saira;
+}
+
+.team-container {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  padding: 20px;
+}
+
+.team-item {
+  background: #fff;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  margin: 10px;
+  width: 22%;
+  transition: transform 0.3s, box-shadow 0.3s;
+  overflow: hidden;
+}
+
+.team-item:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}
+
+.team-content {
+  text-align: center;
+  padding: 20px;
+  background-color: #252525;
+}
+
+.team-img {
+  width: 200px;
+  height: 200px;
+  margin: 0 auto;
+  border-radius: 50%;
+  overflow: hidden;
+}
+
+.team-img img {
+  width: 100%;
+  height: auto;
+  transition: transform 0.3s;
+}
+
+.team-img:hover img {
+  transform: scale(1.1);
+}
+
+.team-name h4 {
+  margin: 10px 0 5px;
+}
+
+.team-name p {
+  margin: 0;
+  color: #888;
+  font-family: Saira;
+}
+
+.team-icons {
+  margin-top: 15px;
+}
+
+.team-icons a {
+  margin: 0 5px;
+  text-decoration: none;
+  color: #555;
+  transition: color 0.3s;
+}
+
+.team-icons a:hover {
+  color: #ff0000;
+}
+
+/* Media Queries */
+@media (max-width: 768px) {
+  .team-item {
+    width: 45%;
+  }
+}
+
+@media (max-width: 480px) {
+  .team-item {
+    width: 100%;
+  }
+}

@@ -1,0 +1,565 @@
+* {
+  font-optical-sizing: auto;
+  font-weight: 550;
+  font-style: normal;
+  padding: 0%;
+}
+
+body {
+  /* font-family: Arial, sans-serif; */
+  font-family: "Manrope", sans-serif;
+  margin: 2vh 0vh;
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+  background-color: #f1f1f1;
+}
+
+.logo img {
+  max-width: 12rem;
+  height: auto;
+  padding: 2px 5px;
+  cursor: pointer;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+  background: #e7e7e7;
+}
+
+.navbar .nav-links a:hover::before,
+.navbar .nav-links a:hover::after {
+  width: 100%;
+}
+
+/* <!-- ------------------herosection ------------------------------------- --> */
+
+.two-grids-section {
+  color: white;
+  display: flex;
+  justify-content: center;
+  /* text-align: center; */
+  margin: 50px;
+  position: relative;
+  /*Set position to relative */
+}
+
+.two-grids-section:before {
+  content: "";
+  position: absolute;
+  top: -50px;
+  /* Adjust top position to cover margin */
+  right: -50px;
+  /* Adjust right position to cover margin */
+  bottom: -50px;
+  /* Adjust bottom position to cover margin */
+  left: -50px;
+  /* Adjust left position to cover margin */
+  background-color: #ff4400;
+  background-image: linear-gradient(45deg, #000000 20%, #850b0b15 100%);
+
+  z-index: -1;
+  /* Ensure the background is behind the content */
+}
+
+.two-grids-section .left-grid,
+.two-grids-section .right-grid {
+  /* flex: 1; */
+  padding-bottom: 20px;
+  padding-top: 40px;
+  /* Add padding inside each grid */
+}
+
+.left-grid {
+  margin-left: 85px;
+  /* Adjust margin as needed */
+  justify-self: center;
+}
+
+.left-grid h1 {
+  font-family: "Lexend", sans-serif;
+  font-family: Saira;
+  font-optical-sizing: auto;
+  font-weight: 500;
+  font-style: normal;
+  font-size: 48px;
+  line-height: 1.5;
+}
+
+.left-grid p {
+  font-size: 16px;
+}
+
+.left-grid button {
+  background-color: white;
+  color: #000000;
+  /* line-height: 2; */
+  border: none;
+  padding: 10px 30px;
+  font-size: 1.1em;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.left-grid button:hover {
+  background-color: #eae6fa;
+}
+
+.right-grid img {
+  width: 700px;
+  height: 400px;
+  margin-left: 2rem;
+  border-radius: 5%;
+}
+
+.right-grid {
+  position: relative;
+}
+
+.overlay {
+  position: absolute;
+  top: 270px;
+  right: 5px;
+  /* text-align: right; */
+}
+
+.overlay img {
+  width: 280px;
+  /* length: 10px */
+}
+
+.headings {
+  margin: 110px 0px;
+  font-weight: 550;
+  font-style: normal;
+  font-family: "Lexend", sans-serif;
+  font-size: 30px;
+  line-height: 1.5;
+}
+
+.headings span {
+  background-image: linear-gradient(90deg, #ff4400 0%, #ff44008a 100%);
+  background-clip: text;
+  color: transparent;
+}
+
+/* Styling for the alternating six-childs sections */
+six-cards {
+  padding: 20px 40px;
+}
+
+.grid-section {
+  display: flex;
+  justify-content: space-around;
+  margin-bottom: 50px;
+}
+
+.grid-section img {
+  width: 550px;
+  height: auto;
+  border-radius: 5%;
+}
+
+.grid-section .content {
+  width: 45%;
+  margin: 100px 0px 30px 0px;
+  /* text-align: center; */
+}
+
+.grid-section:nth-child(even) .content {
+  order: -1;
+  /* Change the order for even numbered sections */
+}
+
+.grid-section .content h2 {
+  font-size: 30px;
+  font-weight: bold;
+  margin-top: 0;
+}
+
+.grid-section .content p {
+  /* color: #666; */
+  font-size: 16px;
+}
+
+.grid-section .content a {
+  /* color: purple; */
+  text-decoration: none;
+  font-family: Manrope;
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 30px;
+  letter-spacing: 0em;
+  color: #ff4400;
+}
+
+.grid-section .content a img {
+  width: 30px;
+  vertical-align: middle;
+}
+
+/* <!-- -----------------------------  3 cards in 1 row------------------------------- --> */
+
+/* Styling for the card container */
+.card-container {
+  display: flex;
+  justify-content: space-around;
+  margin-top: 20px;
+}
+
+/* Styling for the individual card */
+.card {
+  width: 26%;
+  border-radius: 8px;
+  /* overflow: hidden; */
+  position: relative;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: box-shadow 0.3s ease;
+}
+
+/* Styling for the image within the card */
+.card img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+/* Styling for the purple box */
+.purple-box {
+  position: absolute;
+  /* top: 50%; */
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: #ff4400;
+  padding: 0px 10px;
+  color: white;
+  text-align: center;
+  border-radius: 8px;
+  box-shadow: 2px 2px 2px 2px rgb(255, 255, 255);
+
+  /* opacity: 0.9; */
+  transition: opacity 0.3s ease;
+}
+
+.purple-box2 {
+  background-color: #f56363;
+}
+
+.purple-box3 {
+  background-color: #45b2ee;
+}
+
+/* Styling for the heading */
+.card h2 {
+  text-align: center;
+  margin: 10px;
+  font-size: 30px;
+  font-family: lexend;
+}
+
+.card h3 {
+  text-align: center;
+  margin: 10px;
+  font-size: 20px;
+  /* color: #3e3a51; */
+  font-family: "Manrope", Sans-serif;
+  font-weight: 600;
+  line-height: 50px;
+  margin-top: 50px;
+}
+
+/* Styling for the paragraph */
+.card p {
+  padding: 0px 10px 20px 20px;
+  margin-bottom: 20px;
+  font-size: 16px;
+  line-height: 1.5;
+  text-align: center;
+  /* color: #3f3c59cd; */
+}
+
+/* Styling for hover effect */
+.card:hover {
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.card:hover .purple-box {
+  opacity: 1;
+}
+
+/* <!-- _____________________________again cards _________________________________________ --> */
+
+.again-cards {
+  display: flex;
+  justify-content: space-around;
+  margin-top: 20px;
+}
+
+/* Styling for the individual card */
+.again-cards .cards {
+  width: 25%;
+  border-radius: 8px;
+  /* overflow: hidden; */
+  position: relative;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: box-shadow 0.3s ease;
+  padding: 0px 30px;
+  margin: 20px 0px;
+}
+
+/* Styling for the heading */
+.cards h2 {
+  /* text-align: center; */
+  margin: 10px;
+  font-size: 30px;
+  font-family: lexend;
+}
+
+.cards h3 {
+  /* text-align: center; */
+  margin: 10px;
+  font-size: 25px;
+  /* color: #3e3a51; */
+  font-family: "Lexend", Sans-serif;
+  font-weight: 600;
+  line-height: 50px;
+  margin-top: 50px;
+}
+
+/* Styling for the paragraph */
+.cards p {
+  padding: 0px 10px 0px 0px;
+  margin-bottom: 20px;
+  font-size: 16px;
+  line-height: 1.5;
+  /* text-align: center; */
+  /* color: #3f3c59cd; */
+}
+
+.again-cards a {
+  /* color: purple; */
+  text-decoration: none;
+  font-family: Manrope;
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 30px;
+  letter-spacing: 0em;
+  color: #ff4400;
+}
+
+/* Styling for the image within the card */
+.cards img {
+  width: 100%;
+  height: auto;
+  display: block;
+  margin-top: 20px;
+}
+
+/* Styling for hover effect */
+.cards:hover {
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.4);
+}
+
+.gradient-background-1 {
+  background: linear-gradient(
+    230deg,
+    rgba(121, 62, 255, 0.6) 29.23%,
+    rgba(22, 166, 255, 0.6) 105.68%
+  );
+}
+
+.gradient-background-3 {
+  background: linear-gradient(326deg, #96cafb 4.49%, #6568f8 126.3%);
+}
+
+.gradient-background-4 {
+  background: linear-gradient(180deg, #ffeefd 0%, #caf7ff 100%);
+}
+
+/* -----------------------------------FAQ---------------------------------------- */
+/* Update the CSS for accordion content */
+.accordion {
+  position: relative;
+  padding: 0px 50px 40px;
+}
+
+.accordion-content {
+  padding: 5px;
+  overflow: hidden;
+  height: 0;
+  transition: height 0.3s ease;
+}
+
+.accordion-header {
+  display: flex;
+  justify-content: space-between;
+  color: #ffffff;
+  /* padding-bottom: 5px; */
+}
+
+.icon {
+  margin: 3px 0px 0px 0px;
+}
+
+.accordion-item.active .accordion-content {
+  height: auto;
+}
+
+.rotate {
+  transform: rotate(180deg);
+  transition: transform 0.3s ease;
+}
+
+h3 {
+  font-size: 24px;
+}
+
+p {
+  font-size: 16px;
+}
+
+a {
+  color: #ff4400;
+  text-decoration: none;
+}
+
+/* <!-- ---------------------------------------------footer --------------------------------------------------------------------- --> */
+
+.footer {
+  background-color: #000000d1;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.footer-content {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 20px;
+}
+
+.footer-division {
+  width: 40%;
+  /* Adjusted width to 40% */
+}
+
+.footer-division:last-child {
+  width: 60%;
+  /* Adjusted width to 60% */
+}
+
+.footer-division:first-child {
+  /* border-right: 1px solid #ccc; */
+  padding-right: 20px;
+  /* Increased padding for space */
+  margin-right: 70px;
+}
+
+.footer-division h2 {
+  margin: 0 0 10px;
+  font-size: 26px;
+  font-weight: 600;
+  line-height: 32px;
+  font-family: lexend;
+}
+
+.footer-division h2 img {
+  width: 20px;
+}
+
+.footer-subdivisions {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.footer-subdivision {
+  flex: 1;
+  margin: 10px;
+  min-width: 200px;
+  cursor: pointer;
+
+  /* Ensures minimum width for each subdivision */
+}
+
+.footer-subdivision h3 {
+  margin-bottom: 10px;
+  /* color: #3e3a51; */
+  font-family: "Manrope", Sans-serif;
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 30px;
+}
+
+.footer-subdivision ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.footer-subdivision ul li {
+  margin-bottom: 5px;
+  color: #c9c9c9;
+  transition: color 0.3s;
+}
+
+.footer-subdivision ul li:hover {
+  color: #f1f1f1;
+}
+
+.footer-bottom {
+  width: 100%;
+  display: flex;
+  /* align-items:center; */
+}
+
+.footer-bottom p {
+  margin: 0;
+  font-size: 14px;
+  /* color: #8b84aa; */
+}
+
+.footer-bottom .social-icons {
+  display: flex;
+  left: 58%;
+  position: relative;
+
+  /* align-items: center; */
+}
+
+.footer-bottom .social-icons a {
+  margin: 0px 20px;
+  color: #ffffff;
+  text-decoration: none;
+}
+
+.footer-bottom .social-icons a:hover {
+  color: #f66834;
+}
+
+/* _______________________Bottom to Top _________________________________________ */
+
+#myBtn {
+  display: none;
+  position: fixed;
+  bottom: 20px;
+  right: 30px;
+  z-index: 99;
+  font-size: 18px;
+  border: none;
+  outline: none;
+  background-color: #ff4400;
+  color: rgb(0, 0, 0);
+  cursor: pointer;
+  padding: 15px;
+  border-radius: 50%;
+}
+
+#myBtn:hover {
+  background-color: #f66834;
+}
+
+/* -----------------------------------ResponsiveNess--------------------------- */

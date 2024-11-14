@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Animated Sign Up Form</title>
+  <link rel="stylesheet" href="/pages/signUp.css">
+  <link rel="stylesheet" href="/common.css">
+  <link
+    href="https://fonts.googleapis.com/css2?family=Lexend:wght@100..900&family=Manrope:wght@524&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+    rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Poppins:600&display=swap" rel="stylesheet">
+
+
+</head>
+
+<body>
+  <nav class="navbar">
+    <div class="logo"><a href="/index.html"> <img src="/Images/logo.png" alt="Logo"></a>
+    </div>
+    <ul class="nav-links">
+      <li><a href="/index.html">Home</a></li>
+      <li><a href="/pages/feature.html">Features</a></li>
+      <li><a href="/pages/pricing.html">Pricing</a></li>
+      <li><a href="/pages/about.html">About</a></li>
+      <li><a href="/pages/contact.html">Contact</a></li>
+      <!-- <li><a href="/pages/login.html">Log In</a></li> -->
+      <li><a href="/pages/signUp.html">Sign Up</a></li>
+
+    </ul>
+  </nav>
+
+
+  <div class="wrapper">
+    <div class="form-container">
+      <div class="signup-box" style="display:none;">
+        <h1>Sign Up</h1>
+        <form id="signupForm" method="POST"
+          action="https://script.google.com/macros/s/AKfycbzB_UMexWDjUXplqGW8sjqPi3s_TPFYToVuqGmyZSi2qDGxj969D9H6alJZO6oxvx3yRA/exec"
+          name="contact_form">
+          <input type="text" name="Name" id="name" placeholder="Enter Name" required />
+          <input type="email" name="Email" id="email" placeholder="Enter Email" required />
+          <input type="number" name="Contact" id="contact" placeholder="Enter Contact Number" required />
+          <input type="password" name="Password" id="password" placeholder="Enter Password" required />
+          <input type="password" name="ConfirmPassword" id="confirmPassword" placeholder="Confirm Password" required />
+          <input type="submit" id="submit" value="SUBMIT" />
+        </form>
+        <p class="signin-link">Already have an account? <a href="#" id="showSignIn">Sign in</a></p>
+      </div>
+
+      <div class="signin-box">
+        <h1>Sign In</h1>
+        <form id="signinForm" method="POST" action="" name="login_form">
+          <input type="email" name="email" id="signinEmail" placeholder="Enter Email" required />
+          <input type="password" name="password" id="signinPassword" placeholder="Enter Password" required />
+          <input type="submit" id="signinSubmit" value="SIGN IN" />
+        </form>
+        <p class="signup-link">Don't have an account? <a href="#" id="showSignUp">Sign up</a></p>
+      </div>
+      <p id="result"></p>
+
+    </div>
+  </div>
+
+
+
+  <script src="signUp.js"></script>
+</body>
+
+</html>

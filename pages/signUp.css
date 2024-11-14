@@ -1,0 +1,107 @@
+.wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+}
+
+.form-container {
+  width: 100%;
+  max-width: 400px;
+}
+
+.signup-box,
+.signin-box {
+  background-color: #1a1a1a;
+  padding: 10px 0px;
+  border-radius: 10px;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+  text-align: center;
+  animation: slideIn 1s ease-out;
+  margin: 40px 0px;
+}
+
+@keyframes slideIn {
+  from {
+    opacity: 0;
+    transform: translateY(-50px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.signup-box h1,
+.signin-box h1 {
+  color: #ffffff;
+  margin-bottom: 10px;
+}
+
+.signup-box input[type="text"],
+.signup-box input[type="email"],
+.signup-box input[type="number"],
+.signup-box input[type="password"],
+.signin-box input[type="email"],
+.signin-box input[type="password"] {
+  width: 80%;
+  padding: 10px;
+  margin: 8px 0;
+  border: none;
+  border-bottom: 2px solid #ff4400;
+  background: transparent;
+  color: #fff;
+  font-size: 16px;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+  outline: none;
+}
+
+.signup-box input[type="text"]::placeholder,
+.signup-box input[type="email"]::placeholder,
+.signup-box input[type="number"]::placeholder,
+.signup-box input[type="password"]::placeholder,
+.signin-box input[type="email"]::placeholder,
+.signin-box input[type="password"]::placeholder {
+  color: #ffffffc9;
+  opacity: 1;
+}
+
+.signup-box input[type="submit"],
+.signin-box input[type="submit"] {
+  width: 80%;
+  padding: 10px;
+  margin-top: 20px;
+  background-color: #ff4400;
+  border: none;
+  color: #ffffff;
+  font-size: 18px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+  border-radius: 5px;
+}
+
+.signup-box input[type="submit"]:hover,
+.signin-box input[type="submit"]:hover {
+  background-color: #c04514;
+}
+
+.signin-link,
+.signup-link {
+  color: #ffffff;
+  /* margin-top: 20px; */
+}
+
+.signin-link a,
+.signup-link a {
+  color: #ff4400;
+  text-decoration: none;
+  transition: color 0.3s;
+}
+
+.signin-link a:hover,
+.signup-link a:hover {
+  color: #c04514;
+}

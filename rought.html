@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Responsive Navbar</title>
+    <link rel="stylesheet" href="styles.css" />
+    <style>
+      /* Basic Styles */
+      body {
+        margin: 0;
+        font-family: Arial, sans-serif;
+      }
+
+      .navbar {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 10px 20px;
+        background-color: #333;
+      }
+
+      .logo img {
+        width: 120px; /* Adjust size of the logo */
+      }
+
+      .nav-links {
+        list-style: none;
+        display: flex;
+        margin: 0;
+        padding: 0;
+      }
+
+      .nav-links li {
+        margin-left: 20px;
+      }
+
+      .nav-links a {
+        color: white;
+        text-decoration: none;
+        font-size: 18px;
+      }
+
+      .menu-icon {
+        font-size: 28px;
+        color: white;
+        cursor: pointer;
+        display: none; /* Hidden by default, shown on mobile */
+      }
+
+      /* Mobile View */
+      @media (max-width: 768px) {
+        .menu-icon {
+          display: block; /* Show menu icon on mobile */
+        }
+
+        .nav-links {
+          display: none;
+          flex-direction: column;
+          position: absolute;
+          top: 60px;
+          right: 0;
+          background-color: #333;
+          width: 100%;
+          padding: 0;
+        }
+
+        .nav-links.active {
+          display: flex;
+        }
+
+        .nav-links li {
+          text-align: center;
+          margin: 15px 0;
+        }
+
+        .nav-links a {
+          font-size: 20px; /* Larger font for better touch experience */
+        }
+      }
+
+      /* iPhone 12 Specific */
+      @media only screen and (min-width: 390px) and (max-width: 390px) and (min-height: 844px) and (max-height: 844px) {
+        .menu-icon {
+          font-size: 30px; /* Slightly larger for iPhone 12 */
+        }
+
+        .nav-links li {
+          margin: 20px 0;
+        }
+
+        .nav-links a {
+          font-size: 22px; /* Larger font for readability */
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <nav class="navbar">
+      <div class="logo">
+        <a href="/index.html">
+          <img src="/Images/logo.png" alt="Logo" />
+        </a>
+      </div>
+      <div class="menu-icon" id="menu-icon">☰</div>
+      <ul class="nav-links" id="nav-links">
+        <li><a href="/index.html">Home</a></li>
+        <li><a href="/pages/feature.html">Features</a></li>
+        <li><a href="/pages/pricing.html">Pricing</a></li>
+        <li><a href="/pages/about.html">About</a></li>
+        <li><a href="/pages/contact.html">Contact</a></li>
+        <li><a href="/pages/signUp.html">Sign Up</a></li>
+      </ul>
+    </nav>
+    <script>
+      document
+        .getElementById("menu-icon")
+        .addEventListener("click", function () {
+          const navLinks = document.getElementById("nav-links");
+          navLinks.classList.toggle("active");
+        });
+    </script>
+  </body>
+</html>
+generate a animated image for herosection in home page . for the following  requirements -
+generate an animated image for text to speech convertor in black and orange color theme.
+for heading "Start your projects"
